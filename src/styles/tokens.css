@@ -1,0 +1,66 @@
+/* ─── Fonts ──────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Geist';
+  src: url('../../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('../../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.woff2')
+    format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Design tokens ───────────────────────────────────────────────────────── */
+
+@theme {
+  /* Font families — overrides Tailwind v4 defaults intentionally */
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  /* Neutral scale (Tailwind Slate) — generates bg-neutral-*, text-neutral-*, etc. */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+  --color-neutral-950: #020617;
+
+  /* Accent scale (Tailwind Indigo) — generates bg-accent-*, text-accent-*, etc. */
+  --color-accent-50: #eef2ff;
+  --color-accent-100: #e0e7ff;
+  --color-accent-200: #c7d2fe;
+  --color-accent-300: #a5b4fc;
+  --color-accent-400: #818cf8;
+  --color-accent-500: #6366f1;
+  --color-accent-600: #4f46e5;
+  --color-accent-700: #4338ca;
+  --color-accent-800: #3730a3;
+  --color-accent-900: #312e81;
+  --color-accent-950: #1e1b4b;
+}
+
+/* ─── Semantic aliases ────────────────────────────────────────────────────── */
+/* Runtime CSS vars — use as var(--color-bg) in component styles.             */
+/* These do NOT generate Tailwind utility classes (intentional).              */
+
+:root {
+  --color-bg: #f8fafc; /* neutral-50  — page background */
+  --color-surface: #f1f5f9; /* neutral-100 — card/panel surface */
+  --color-border: #e2e8f0; /* neutral-200 — borders and dividers */
+  --color-text: #0f172a; /* neutral-900 — primary text */
+  --color-text-muted: #64748b; /* neutral-500 — secondary/muted text */
+  --color-primary: #4f46e5; /* accent-600  — primary action */
+  --color-primary-hover: #4338ca; /* accent-700  — primary action hover */
+}

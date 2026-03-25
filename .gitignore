@@ -1,0 +1,37 @@
+# Vite build output
+dist
+dist-ssr
+
+# Dependencies
+node_modules
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Storybook
+storybook-static
+
+# Playwright
+playwright-report/
+test-results/
+
+# Obsidian
+.obsidian/
+
+*storybook.log
+
+# Superpowers brainstorm sessions
+.superpowers/

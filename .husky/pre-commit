@@ -1,0 +1,2 @@
+git diff --quiet env.d.ts || git add env.d.ts
+pnpm exec lint-staged
