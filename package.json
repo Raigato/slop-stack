@@ -16,15 +16,13 @@
     "build-storybook": "storybook build",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "prepare": "husky",
-    "env:load": "varlock load"
+    "prepare": "husky"
   },
   "dependencies": {
-    "@varlock/vite-integration": "^0.2.7",
     "geist": "^1.7.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "varlock": "^0.6.3"
+    "zod": "^4.3.6"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
